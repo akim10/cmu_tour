@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+        
+        </script>
+
+
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="welcomevisitor">
+                <a href="#"> <img class="user" src="images/user.png"> <strong>Welcome</strong> Visitor!</a>
+              </div>
+              <hr>
+              <a class="navoptions" href="mainmenu.html">Home</a>
+              <hr>
+              <a class="navoptions" href="places.html">Places</a>
+              <hr>
+              <a class="navoptions" href="images/map.pdf" target="_blank">Campus Map</a>
+              <hr>
+              <a class="navoptions" href="FAQ.html">FAQ</a>
+              <hr>
+            </div>
+
+        <div id="general-tour" class="row">
+            <span class="hamburgermenu" onclick="openNav()">
+              <div class="hamburgerLine"></div>
+              <div class="hamburgerLine"></div>
+              <div class="hamburgerLine"></div>
+            </span>
+
+            <div id="general-tour-text">
+                <p>General Tour</p>
+                <hr>
+                <div class="btn-group" role="group" aria-label="...">
+                  <button type="button" class="btn btn-round left-btn"><a href="tourinfo.html">Learn More</a></button>
+
+                  <button type="button" class="btn btn-round right-btn" ><a href="places/hunt.html">Start Tour</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="additional-tours">
+            <p>Scroll down to view other specialized tour options on campus!</p>
+            <div id="additional-tours1" class="row">        
+                <div id="dining-tour" class="col-xs-6">
+                    <img src="images/cutlery.png" class="icon" height="40px" width="40px">
+                    <p>Dining<br>Tour</p>
+                </div>
+
+                <div id="housing-tour" class="col-xs-6">
+                    <img src="images/house.png" class="icon" height="40px" width="40px">
+                    <p>Housing Tour</p>
+                </div>
+            </div>
+            <div id="additional-tours2" class="row">        
+                <div id="athletics-tour" class="col-xs-6">
+                    <img src="images/dumbbell.png" class="icon" height="40px" width="40px">
+                    <p>Athletics Tour</p>
+                </div>
+
+                <div id="landmarks-tour" class="col-xs-6">
+                    <img src="images/bridge.png" class="icon" height="40px" width="40px">
+                    <p>Landmarks Tour</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery (Bootstrap JS plugins depend on it) -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>

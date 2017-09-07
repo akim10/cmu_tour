@@ -1,0 +1,641 @@
+* {
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.jumbotron{
+    padding-left: 30px;
+}
+.navbar-brand {
+    padding-left: 20px;
+}
+
+ul.pagination {
+    margin-left: 40%;
+}
+
+body {
+    background-color: #fff;
+}
+html, body {margin:0;padding:0;height:100%;}
+
+a {
+    color:white;
+}
+
+a:active {
+    color:white;
+    text-decoration: none;
+}
+a:hover {
+    color:white;
+    text-decoration: none;
+}
+
+/* For mainmenu.html */
+#general-tour{
+    height: 60%;
+    background-image: url("../images/generalgradient.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+    font-size: 36px;
+    /*margin-bottom: 5%;*/
+}
+
+#general-tour-text{
+    padding-top: 47.5%;
+    padding-left: 2.5%;
+    /*padding-left: 2.5%;*/
+    margin-bottom: 5%;
+}
+
+#general-tour-text>p, .btn-group {
+    padding-left: 5%
+}
+#general-tour-text>p{
+    margin-bottom: -15px;
+    font-weight: 400;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 300;
+}
+.left-btn {
+    background-color: #389648;
+}
+.right-btn{
+    background-color: #4CD964; 
+}
+.btn-round-lg{
+    border-radius: 22.5px;
+}
+.btn-round{
+    border-radius: 24px;
+}
+.btn-round-sm{
+    border-radius: 15px;
+}
+.btn-round-xs{
+    border-radius: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#additional-tours {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+}
+#additional-tours>p{
+    margin-left: 5%;
+    width: 90%;
+    font-size: 14px;
+}
+#dining-tour,#housing-tour,#athletics-tour,#landmarks-tour {
+    padding: 20px;
+    text-align: center;
+    font-size: 180%;
+    font-weight: 300;
+    color: white;
+    height: 150px;
+    border-radius: 10px;
+    width:42.5%;
+    margin-right: 2.5%;
+}
+#additional-tours1 {
+    margin-bottom: 3%;
+}
+#dining-tour {
+    background-color: #F4AA00;
+    margin-left: 6%;
+}
+#housing-tour {
+    background-color: #C60B2B;
+}
+#athletics-tour {
+    margin-left: 6%;
+    background-color: #00853A;
+}
+#landmarks-tour {
+    background-color: #002B74;
+}
+
+
+#tourinfo-body {
+    background-color: #a6a6a6;
+}
+
+#tourinfo {
+    padding-top: 3%;
+    padding-bottom: 8%;
+    background-color: white;
+    border-radius: 30px;
+    width:95%;
+    margin-left: 2.5%;
+}
+#inner-tourinfo {
+    margin-left: 5%;
+}
+
+#inner-tourinfo hr {
+	width: 95%;
+	margin-left: -3%;
+}
+#tourinfo a {
+    color: blue;
+}
+
+#tourinfo p {
+    font-weight: 600;
+    font-size: 150%;
+}
+
+#mapPreview {
+	width:109%;
+	margin-left: -10%;
+}
+.tourinfo-icon {
+    margin-left: -1%;
+    padding-left: 0%;
+    text-align: center;
+}
+#spaceholder {
+    margin-top: 18%;
+}
+#back {
+	margin-top: 4%;
+    margin-left: 2%;
+    font-size: 130%;
+}
+#back a {
+    color: blue;
+    font-weight: 600;
+}
+
+
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a.header {
+    background-color: #e2e2e2; /* Add a darker background color for headers */
+    cursor: default; /* Change cursor style */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+/* HAMBURGER BAR */
+
+/* adjust body when menu is open */
+body.slide-active {
+    overflow-x: hidden
+}
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+    margin-top: 0px!important
+}
+/*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+#page-content {
+    position: relative;
+    padding-top: 70px;
+    left: 0;
+}
+#page-content.slide-active {
+    padding-top: 0
+}
+
+
+
+/* put toggle bars on the left :: not using button */
+#slide-nav .navbar-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: left;
+    margin: 0;
+    width: 30px;
+    height: 40px;
+    padding: 10px 0 0 0;
+    border: 0;
+    background: transparent;
+}
+/* icon bar prettyup - optional */
+#slide-nav .navbar-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+}
+/* The color of the hamburger when menu is open */
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+    background: red;
+}
+.navbar-header {
+    position: relative
+}
+/* un fix the navbar when active so that all the menu items are accessible */
+.navbar.navbar-fixed-top.slide-active {
+    position: relative
+}
+@media (max-width:767px) { 
+    #slide-nav .container {
+        margin: 0!important;
+        padding: 0!important;
+      height:100%;
+    }
+    #slide-nav .navbar-header {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    #slide-nav .navbar.slide-active {
+        position: absolute;
+        width: 80%;
+        top: -1px;
+        z-index: 1000;
+    }
+    #slide-nav #slidemenu {
+        background: #f7f7f7;
+        left: -100%;
+        width: 80%;
+        min-width: 0;
+        position: absolute;
+        padding-left: 0;
+        z-index: 2;
+        top: -8px;
+        margin: 0;
+    }
+    #slide-nav #slidemenu .navbar-nav {
+        min-width: 0;
+        width: 100%;
+        margin: 0;
+    }
+    #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+        min-width: 0;
+        width: 80%;
+        white-space: normal;
+    }
+    #slide-nav {
+        border-top: 0;
+    }
+    #slide-nav.navbar-inverse #slidemenu {
+        background: #333
+    }
+    /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+    #navbar-height-col {
+        position: fixed;
+        top: 0;
+        height: 100%;
+      bottom:0;
+        width: 80%;
+        left: -80%;
+        background: #f7f7f7;
+    }
+    #navbar-height-col.inverse {
+        background: #333;
+        z-index: 1;
+        border: 0;
+    }
+    #slide-nav .navbar-form {
+        width: 100%;
+        margin: 8px 0;
+        text-align: center;
+        overflow: hidden;
+        /*fast clearfixer*/
+    }
+    #slide-nav .navbar-form .form-control {
+        text-align: center
+    }
+    #slide-nav .navbar-form .btn {
+        width: 100%
+    }
+}
+@media (min-width:768px) { 
+    #page-content {
+        left: 0!important
+    }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed
+    }
+    .navbar-header {
+        left: 0!important
+    }
+}
+#slidemenu{
+    padding-top: 10px;
+}
+
+#landingScreen{
+    background-image: url("../images/landingBackground.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+#start{
+    text-align: center;
+    padding-top: 140%;
+}
+
+#startButton{
+    font-size: 25px;
+    padding: 12px 60px;
+    border-radius: 32px;
+}
+
+/* End of mainmenu.html */
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: rgb(57, 136, 202);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+    
+.navoptions{
+    margin-left: 15px;
+}
+    
+.hamburgermenu{
+    /*margin-top: 10px;*/
+    font-size: 50px;
+    cursor: pointer;
+}
+    
+.welcomevisitor{
+    background-color: #E6E7E7;
+    opacity: 60%;
+    height: 100px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.user{
+    padding-top: 20px;
+    padding-right: 25px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*modal slide from bottom css*/
+
+.modal.fade.in .modal-body {
+    bottom: 0; 
+}
+.modal-body {
+    position: absolute;
+    bottom: -80px;
+    /*right: 50%;*/
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    background-color: #e5e5e5;
+    border-radius: 6px 6px 0 0;
+    -webkit-transition: bottom 0.3s ease-out;
+    -moz-transition: bottom 0.3s ease-out;
+    -o-transition: bottom 0.3s ease-out;
+    transition: bottom 0.3s ease-out;
+}
+.close {
+    margin-top: -20px;
+    text-shadow: 0 1px 0 #ffffff;
+}
+.popup-button {
+    font-weight: bold;
+    float:right;
+    /*margin-right: 2%;*/
+}
+
+#nav-bar{
+    background-color: white;
+    /*height: 70px;*/
+
+}
+
+.hamburgerLine{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    margin-left: 30px;
+}
+
+.blackHamburgerLine{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    margin-left: 30px;
+}
+
+.hamburgerLine:first-child{
+    margin-top: 26px;
+}
+
+.blackHamburgerLine:first-child{
+    margin-top: 26px;
+}
+
+.blackHamburgerLine:last-child{
+    margin-bottom: 13px;
+}
+
+#huntmap{
+    height:520px;
+    background-color: white;
+}
+
+#overviewMap{
+    height:325px;
+    background-color: yellow;
+}
+
+.placeinfo{
+    /*height:750px;*/
+    background-color: white;
+    padding: 25px;
+}
+
+.overviewInfo{
+    /*height:750px;*/
+    background-color: white;
+    padding: 10px 25px 10px 30px;
+}
+
+#next{
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-left: 25px;
+}
+
+#next-btn{
+    margin-right: 20px;
+}
+
+.huntImage{
+    padding: 0px;
+}
+
+#huntImage{
+    width:100%;
+}
+
+.hashtag{
+    text-align: center;
+    /*display:inline;*/
+}
+
+.hashtag:last-child{
+    margin-top:0px;
+}
+
+
+.thumbnail.img{
+    width:100%;
+    /*padding: 0px;*/
+}
+
+.thumbnail{
+    margin:0px;
+    padding:2px;
+    border: 0px;
+    /*margin-bottom:2px;*/
+    /*margin-left:2px;*/
+    /*margin-right:2px;*/
+}
+
+.divider{
+    height: 30px;
+    background-color: #E8E7E7;
+
+}
+
+img.valign{
+    margin-top: 50%;
+    margin-left: 7.5%;
+}
+
+.tourinfo-icon{
+    color:black;
+}
+
+.centeredButton{
+    text-align:center;
+}
+
+.cancel-btn{
+    padding: 10px 42px;
+}
+
+.start-btn{
+    padding: 10px 50px;
+}
+
+
+#faq-img{
+/*    margin-top: 10px;*/
+    width:105%;
+    height: 39%;
+    background-image: url("../images/faq.jpg");
+    background-size: auto 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#faq-header{
+    font-size: 18px;
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #e2e2e2;
+    text-align: center;
+}
+
+#faq-question{
+    font-size: 16px;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    background-color: #e2e2e2;
+}
+
+#faq-answer{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#p-faq-answer{
+    padding-left: 15px;
+}
+
+#p-faq-answer-header{
+    font-size: 15px;
+}
+

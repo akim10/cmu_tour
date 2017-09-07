@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hunt Library</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/styles.css">
+	</head>
+
+
+	<body>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="welcomevisitor">
+        <a href="#"> <img class="user" src="../images/user.png"> <strong>Welcome</strong> Visitor!</a>
+      </div>
+      <hr>
+      <a class="navoptions" href="../mainmenu.html">Home</a>
+      <hr>
+      <a class="navoptions" href="../places.html">Places</a>
+      <hr>
+      <a class="navoptions" href="../images/map.pdf" target="_blank">Campus Map</a>
+      <hr>
+      <a class="navoptions" href="../FAQ.html">FAQ</a>
+      <hr>
+    </div>
+
+        <div id="nav-bar" class="row">
+            <span class="blackHamburgermenu" onclick="openNav()">
+              <div class="blackHamburgerLine black"></div>
+              <div class="blackHamburgerLine black"></div>
+              <div class="blackHamburgerLine black"></div>
+            </span>
+        </div>
+
+
+		<div class="container-fluid mapSection">
+			<div class="row" id="huntmap">
+			<iframe 
+		      width="375"
+			  height="520"
+			  frameborder="0" style="border:0"
+			  src="https://www.google.com/maps/d/u/2/embed?mid=14N9-9uoVp9aUOl69u3ATc7LHG5k&z=17">
+			</iframe>
+			</div>
+		</div>	
+		<div class="infoSection">
+			<div class="container-fluid">
+				<div class="row placeinfo">
+					<div class="col-xs-7 infoheader">
+						<h4> <strong> Hunt Library </strong> </h4>
+						<!-- <p> Read More </p> -->
+					</div>
+					<div class="col-xs-4" id="next-btn">
+						<a href="#readMore"><button onclick=type="button" id="next" class="btn btn-primary">Read</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="huntImage" id="readMore">
+				<img src="../images/huntLibrary.jpg" id="huntImage">
+			</div>
+
+			<!-- <hr id="paddedLine">  -->
+			<div class="container-fluid"">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2> <strong> Hunt Library </strong></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<p>Hunt Library is the largest of five libraries on campus with more than 600,000 volumes. Watch the building’s evening light show that accentuates the aluminum and glass structure or visit the library’s new state-of-the art facility and collaborative studios.
+						</p>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="divider">
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3> <strong> Student Testimonies </strong></h3>
+					</div>
+					<div class="col-xs-4 testt">
+						<img class="valign" src="../images/brandon.png">
+					</div>
+					<div class="col-xs-8">
+						<h4>Brandon Lee </h4>
+						<p> HCI + Stat '18 </p>
+						<p><em>"Hunt Library is cool because I can study there and the third floor has quiet study which is nice" </em></p>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-4">
+						<img class="valign" src="../images/grace.png">
+					</div>
+					<div class="col-xs-8">
+						<h4>Grace Cha</h4>
+						<p> Design + HCI '19 </p>
+						<p><em>"Hunt is great for color printing, laser cutting, and has some really cool Ideate rooms." </em></p>
+						<hr>
+					</div>
+				</div>
+			</div>
+			<div class="divider">
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3 class="hashtag"><strong> #HuntLibrary </strong></h3>
+						<h3 class="hashtag"><strong> #CarnegieMellon </strong></h3>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-4 thumbnail">
+						<img src="../images/insta1.jpg">
+					</div>
+					<div class="col-xs-4 thumbnail">
+						<img src="../images/insta2.png">
+					</div>
+					
+					<a href="insta3.html">
+						<div class="col-xs-4 thumbnail">
+							<img src="../images/insta3.png">
+						</div>
+					</a>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-4 thumbnail">
+						<img src="../images/insta4.png">
+					</div>
+					<div class="col-xs-4 thumbnail">
+						<img src="../images/insta6.png">
+					</div>
+					<div class="col-xs-4 thumbnail">
+						<img src="../images/insta9.png">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-4 thumbnail">
+						<img src="../images/insta5.png">
+					</div>
+					<a href="insta8.html">
+						<div class="col-xs-4 thumbnail">
+							<img src="../images/insta8.png">
+						</div>
+					</a>
+					<div class="col-xs-4 thumbnail">
+						<img src="../images/insta7.png">
+					</div>
+				</div>
+			</div>
+			<!-- <br> -->
+			<div class="divider"></div>
+		</div>
+	<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+	    function openNav() {
+	        document.getElementById("mySidenav").style.width = "300px";
+	        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	    }
+
+	    function closeNav() {
+	        document.getElementById("mySidenav").style.width = "0";
+	        document.body.style.backgroundColor = "white";
+	    }
+
+	    // Select all links with hashes
+		$('a[href*="#"]')
+		  // Remove links that don't actually link to anything
+		  .not('[href="#"]')
+		  .not('[href="#0"]')
+		  .click(function(event) {
+		    // On-page links
+		    if (
+		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+		      && 
+		      location.hostname == this.hostname
+		    ) {
+		      // Figure out element to scroll to
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		      // Does a scroll target exist?
+		      if (target.length) {
+		        // Only prevent default if animation is actually gonna happen
+		        event.preventDefault();
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000, function() {
+		          // Callback after animation
+		          // Must change focus!
+		          var $target = $(target);
+		          $target.focus();
+		          if ($target.is(":focus")) { // Checking if the target was focused
+		            return false;
+		          } else {
+		            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+		            $target.focus(); // Set focus again
+		          };
+		        });
+		      }
+		    }
+		  });
+		  
+    </script>
+	</body>
+
+</html>

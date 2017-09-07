@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+        
+        </script>
+
+
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="welcomevisitor">
+                <a href="#"> <img class="user" src="images/user.png"> <strong>Welcome</strong> Visitor!</a>
+              </div>
+              <hr>
+              <a class="navoptions" href="mainmenu.html">Home</a>
+              <hr>
+              <a class="navoptions" href="places.html">Places</a>
+              <hr>
+              <a class="navoptions" href="images/map.pdf" target="_blank">Campus Map</a>
+              <hr>
+              <a class="navoptions" href="FAQ.html">FAQ</a>
+              <hr>
+            </div>
+
+        <div class="row">
+            <span class="blackHamburgermenu" onclick="openNav()">
+              <div class="blackHamburgerLine"></div>
+              <div class="blackHamburgerLine"></div>
+              <div class="blackHamburgerLine"></div>
+            </span>
+        </div>
+
+
+        <div class="infoSection">
+            <div class="container-fluid">
+              <div class="row" id="overviewMap">
+                This is where the map will be.
+              </div>
+            </div>  
+            <!-- <div class="divider"> -->
+            <!-- </div> -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 overviewInfo">
+                        <h3> <strong> General Tour Locations </strong></h3>
+                    </div>
+                      <ol>
+                      <div class="col-xs-6">
+                        <li> Warner Hall </li>
+                        <li> University Center </li>
+                        <li> Margaret Morrison </li>
+                        <li> College of Fine Arts </li>
+                        <li> Hunt Library </li>
+                      </div>
+                      <div class="col-xs-6">
+                        <li> Hamerschlag Hall</li>
+                        <li> Wean Hall</li>
+                        <li> Doherty Hall</li>
+                        <li> Gates-Hillman Center</li>
+                      </div>
+                      </ol>
+                </div>
+                <hr>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <p class="centeredButton"><button type="button" class="btn btn-danger cancel-btn">Cancel</button></p>
+                    </div>
+                    <div class="col-xs-6">
+                      <p class="centeredButton"><a href="hunt.html"><button type="button" class="btn btn-success start-btn">Start</button></a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    
+
+
+        <!-- jQuery (Bootstrap JS plugins depend on it) -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
